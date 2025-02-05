@@ -1,0 +1,323 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #212529;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.right{
+    display: flex;
+    align-items: center;
+    gap:30px ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+
+.list{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.navl:hover{
+    color: white;
+    opacity: 1;
+}
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    opacity: 0.7;
+}
+
+.container{
+    width: 80%;
+}
+.container1{
+    width: 80%;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+.left{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image-wrapper{
+    display: flex;
+    margin: 47px 12px;
+    height: 33vh;
+    width: 53%;
+}
+.image-wrapper img{
+    border-radius: 5px;
+}
+.text h1{
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.text p{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+button{
+    padding: 10px 15px;
+    border-radius: 7px;
+    background-color: #0D6EFD;
+    color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    transition: all .3s ease;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+button:hover{
+    background-color: #0b5ed7;
+}
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #6C757D;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 12vh;
+    border-radius: 5px;
+    margin: 15px 12px;
+}
+.col{
+    width: 33.3%;
+    padding: 10px;
+}
+.product{
+    position: relative;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+
+}
+.products{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#products{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:  50px 0px;
+}
+.product-top {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    width: 100%;
+    height: 20vh;
+    padding: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.product-bottom{
+    background-color: #00000008;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 8px 16px;
+    border: 1px solid lightgray;
+}
+.product-top h2{
+    margin: 0px 0px 8px;
+    font-size: 35px;
+    font-style: normal;
+}
+.active{
+    color: white;
+    opacity: 1;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #212529;
+}
+.footer-wrapper{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 13vh;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* === Responsive Design === */
+
+/* Planşetlər və kiçik ekranlar (max-width: 1024px) */
+.fa-bars{
+    padding: 5px 15px;
+    background-color: transparent;
+    color: white;
+    opacity: 0.6;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    font-size: 30px;
+}
+.right .fa-bars{
+    display: none;
+}
+@media screen and (max-width: 1450px) {
+    .image-wrapper img {
+        max-width: 90%; /* Laptoplarda şəkil bir az kiçilir */
+    }
+    .container, .container1 {
+        width: 90%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-wrapper {
+        width: 100%;
+        height: auto;
+    }
+
+    .text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .products {
+        flex-wrap: wrap;
+    }
+
+    .col {
+        width: 48%; /* Kartları yan-yana sığdırmaq üçün */
+    }
+    
+}
+
+/* Mobil telefonlar (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .header{
+        display: flex;
+        justify-content: space-between;
+    }
+    .fa-bars{
+        display: flex !important;
+        
+     }
+    .right .list{
+        display: none;
+    }
+    .image-wrapper img {
+        max-width: 80%; /* Planşetlərdə 80% olur */
+    }
+    .wrapper {
+        display: flex;
+        text-align: center;
+    }
+
+    .list {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .container, .container1 {
+        width: 95%;
+        
+    }
+
+    .image-wrapper {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .text h1 {
+        font-size: 30px;
+    }
+
+    .text p {
+        font-size: 18px;
+    }
+
+    .hero-wrapper {
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col {
+        width: 100%;
+    }
+
+    .footer-wrapper {
+        font-size: 13px;
+        text-align: center;
+    }
+    
+}
+
+/* Kiçik telefonlar (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .image-wrapper img {
+        max-width: 70%; /* Telefonlarda 70% olur */
+    }
+    .list {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .text h1 {
+        font-size: 24px;
+    }
+
+    .text p {
+        font-size: 16px;
+    }
+
+    .hero-wrapper {
+        font-size: 14px;
+        padding: 15px;
+    }
+
+    button {
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .footer-wrapper {
+        font-size: 12px;
+        padding: 10px;
+    }
+}
